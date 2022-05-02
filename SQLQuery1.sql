@@ -42,7 +42,7 @@ select date,SUM(new_cases) as total_new_cases,SUM(cast(new_deaths as int)) as to
 from portfolio_project..CovidDeaths$
 where continent is not null
 group by date
-order by time
+order by date
 
 
 
